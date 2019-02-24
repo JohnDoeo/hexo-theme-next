@@ -30,12 +30,14 @@ post:
   read_more: 阅读全文
   untitled: 未命名
   toc_empty: 此文章未包含目录
-  visitors: 阅读次数
+  visitors: 热度
   wordcount: 字数统计
   min2read: 阅读时长
   totalcount: Site words total count
   copyright:
     author: 本文作者
+    publish: 发布时间
+    update: 最后更新
     link: 本文链接
     license_title: 版权声明
     license_content: '本博客所有文章除特别声明外，均采用

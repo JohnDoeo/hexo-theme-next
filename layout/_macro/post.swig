@@ -210,6 +210,7 @@
                  <span class="post-meta-item-text">{{__('post.visitors')}}&#58;</span>
                {% endif %}
                  <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
              </span>
           {% endif %}
 
@@ -238,7 +239,7 @@
               {% endif %}
 
               {% if theme.post_wordcount.wordcount and theme.post_wordcount.min2read %}
-                <span class="post-meta-divider">|</span>
+                字<span class="post-meta-divider">|</span>
               {% endif %}
 
               {% if theme.post_wordcount.min2read %}
@@ -250,7 +251,7 @@
                 {% endif %}
                 <span title="{{ __('post.min2read') }}">
                   {{ min2read(post.content) }}
-                </span>
+                </span>分钟
               {% endif %}
             </div>
           {% endif %}
@@ -340,6 +341,12 @@
       </div>
     {% endif %}
 
+        <div>
+          {% if not is_index %}
+            {% include 'passage-end-tag.swig' %}
+          {% endif %}
+        </div>
+
     {% if (theme.alipay or theme.wechatpay or theme.bitcoin) and not is_index %}
       <div>
         {% include 'reward.swig' %}
@@ -356,7 +363,7 @@
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}" rel="tag"># {{ tag.name }}</a>
+            <a href="{{ url_for(tag.path) }}" rel="tag"><i class="fa fa-tag"></i> {{ tag.name }}</a>
           {% endfor %}
         </div>
       {% endif %}
