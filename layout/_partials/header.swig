@@ -1,3 +1,13 @@
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?02bb751eeb70e9cc5096d7716661ad93";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 <div class="site-brand-wrapper">
   <div class="site-meta {% if theme.custom_logo.enabled %}custom-logo{% endif %}">
     {% if theme.custom_logo.image and theme.scheme === 'Muse' %}

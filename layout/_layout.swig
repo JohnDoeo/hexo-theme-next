@@ -93,4 +93,8 @@
 </body>
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/clicklove.js"></script>
+
+<script type="text/javascript" src="https://unpkg.com/minigrid@3.1.1/dist/minigrid.min.js"></script>
+<link rel="stylesheet" href="/photos/photos.css">
+<script type="text/javascript" src="/photos/photo.js"></script>
 </html>
